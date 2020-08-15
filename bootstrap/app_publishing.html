@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="location.ico">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
 <title>App Publishing</title>
 <style>
 /* Import */
@@ -21,35 +23,35 @@ body {
 	background: #fff !important;
 }
 
-/* Update Box */
+/* News Box */
 .contents-box {
 	width: 100%;
 	background: #fff;
 	padding: 1em 2em 1em 2em;
 }
 
-.update-table {
+.news-table {
 	width: 100%;
 }
 
-.update-table tr {
+.news-table tr {
 	border-bottom: solid 1px #ccc;
 }
 
-.update-table tr:last-child {
+.news-table tr:last-child {
 	border-bottom: none;
 }
 
-.update-table th, .update-table td {
+.news-table th, .news-table td {
 	vertical-align: middle;
 	padding: 1em;
 }
 
-.update-table th {
+.news-table th {
 	text-align: center;
 }
 
-.update-table td {
+.news-table td {
 	text-align: left;
 }
 
@@ -71,6 +73,28 @@ footer {
 	padding: 1em;
 }
 
+.footer-menu {
+	
+}
+
+/* Fork Me */
+.fork-me {
+	position: fixed;
+	bottom: 1em;
+	right: 1.2em;
+}
+
+.fork-btn {
+	display: block;
+	color: #777;
+	transition: .5s;
+}
+
+.fork-btn:hover {
+	color: #333;
+	transform: rotate(360deg);
+}
+
 </style>
 </head>
 
@@ -88,7 +112,7 @@ footer {
 				<a class="nav-link" href="#about">About </a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#update">Update</a>
+				<a class="nav-link" href="#news">News</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#download">Download</a>
@@ -97,7 +121,7 @@ footer {
 				<a class="nav-link" href="#release">Release Note</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="mailto:example@example.com">Contact</a>
 			</li>
 		</ul>
 	</div>
@@ -126,14 +150,14 @@ footer {
 </div>
 </div>
 
-<hr class="invisible mt-3 mb-3" id="update">
+<hr class="invisible mt-3 mb-3" id="news">
 
-<!-- Updates -->
+<!-- News -->
 <div class="row">
 <div class="col-12">
 	<div class="contents-box shadow-sm">
-		<h1 class="text-center mb-3">Update</h1>
-		<table class="update-table">
+		<h1 class="text-center mb-3">News</h1>
+		<table class="news-table">
 			<tbody>
 				<tr>
 				  <th>2019/10/03</th>
@@ -164,6 +188,22 @@ footer {
 <div class="col-12">
 	<div class="contents-box shadow-sm">
 		<h1 class="text-center mb-3">Download</h1>
+
+		<div class="card shadow-sm mb-2">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md-6">
+						<a href="#">file2.0.zip</a>
+					</div>
+					<div class="col-md-3">
+					Ver 2.0
+					</div>
+					<div class="col-md-3">
+					2020/04/01
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="card shadow-sm mb-2">
 			<div class="card-body">
@@ -233,8 +273,17 @@ footer {
 
 <!-- Footer -->
 <footer>
+<div class="d-md-flex footer-menu mb-3">
+	<div class="p-2 flex-fill"><a href="#">Extensions</a></div>
+	<div class="p-2 lex-fill"><a href="#">Sponsor</a></div>
+	<div class="p-2 flex-fill"><a href="#">Term of Use</a></div>
+</div>
 &copy; 2020 Novalumo
 </footer>
+
+<div class="fork-me">
+	<h1><a href="#" class="fork-btn" title="Fork me!!"><i class="fab fa-github"></i></a></h1>
+</div>
 
 <!--  Load JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
