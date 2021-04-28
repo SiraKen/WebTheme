@@ -1,7 +1,15 @@
-# Webサイト向けテンプレート
+# Templates for Websites
 
-## フォルダ構造
+## Programs
 
-original/ : すべて自作、一部レスポンシブ対応。
-
-bootstrap/ : Bootstrapで制作したもの。レスポンシブに対応。
+.
+├── README.md
+├── bootstrap
+│   └── app_publishing.html
+└── components
+    ├── bootstrap-reboot.min.css
+    ├── button.html
+    ├── index.html
+    ├── scss
+    │   └── style.scss
+    └── style.css

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+@import '../../../../assets/bootstrap/bootstrap.scss';
+
+body {
+	font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+.ban { pointer-events: none; }
+
+// News box
+.contents-box {
+	width: 100%;
+	background: #fff;
+	padding: 1em 2em 1em 2em;
+}
+
+.news-table {
+	width: 100%;
+}
+
+.news-table tr {
+	border-bottom: solid 1px #ccc;
+}
+
+.news-table tr:last-child {
+	border-bottom: none;
+}
+
+.news-table th, .news-table td {
+	vertical-align: middle;
+	padding: 1em;
+}
+
+.news-table th {
+	text-align: center;
+}
+
+.news-table td {
+	text-align: left;
+}
+
+
+// Release Note
+.release-item {
+	border-bottom: solid 1px #eee;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+// Footer
+footer {
+	width: 100%;
+	background: #eee;
+	border-top: solid 1px #ccc;
+	text-align: center;
+	padding: 1em;
+}
+
+// Fork me
+.fork-me {
+	position: fixed;
+	bottom: 1em;
+	right: 1.2em;
+}
+
+.fork-btn {
+	display: block;
+	color: #777;
+	transition: .5s;
+
+	&:hover {
+		color: #333;
+		transform: rotate(360deg);
+	}
+}
